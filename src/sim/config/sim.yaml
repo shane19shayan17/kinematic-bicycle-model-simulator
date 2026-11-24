@@ -1,0 +1,32 @@
+sim:
+  ros__parameters:
+    # Visualization
+    background_color: "white"
+    point_radius: 0.1
+    point_color: "red"
+    x_axis_scale: 10.0
+    y_axis_scale: 10.0
+    footprint_color: "royalblue"
+    footprint_line_width: 1.5
+    footprint_max_points: 20000
+
+    # Simulation
+    simulator_frequency: 30.0
+    wheelbase: 0.25
+    max_steering_angle: 0.60
+
+    # Initial ground-truth state
+    initial_x: 0.0
+    initial_y: 0.0
+    initial_heading: 0.0
+
+    # State-estimation noise: Gaussian standard deviation
+    state_noise_x_std: 0.01
+    state_noise_y_std: 0.01
+    state_noise_heading_std: 0.01
+
+    # Actuator noise: multiplicative Gaussian standard deviation (% of command)
+    actuator_noise_percent: 0.0
+
+    # -1 means random seed; nonnegative values make noise repeatable
+    random_seed: -1
